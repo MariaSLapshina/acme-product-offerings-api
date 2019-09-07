@@ -43,14 +43,14 @@ const Offering = sequelize.define("offering", {
     type: DECIMAL,
     allowNull: false,
   },
-  // productId: {
-  //   type: UUID,
-  //   allowNull: false,
-  // },
-  // companyId: {
-  //   type: UUID,
-  //   allowNull: false,
-  // }
+  productId: {
+    type: UUID,
+    allowNull: false,
+  },
+  companyId: {
+    type: UUID,
+    allowNull: false,
+  }
 })
 
 Product.hasMany(Offering)
